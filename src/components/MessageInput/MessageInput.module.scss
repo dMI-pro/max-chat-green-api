@@ -1,0 +1,55 @@
+.wrap {
+  padding: 10px 12px 14px;
+}
+
+.error {
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(206, 66, 87, 0.14);
+  color: #ff7b88;
+  font-size: 13px;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: end;
+  padding: 8px 8px 8px 14px;
+  border-radius: 18px;
+  background: var(--bg-secondary);
+  border: 1px solid transparent;
+}
+
+.bar textarea {
+  resize: none;
+  border: 0;
+  outline: none;
+  background: transparent;
+  max-height: 140px;
+  min-height: 24px;
+  line-height: 1.4;
+  padding: 8px 0;
+  color: var(--text-primary);
+}
+
+.bar button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  transition: background 0.15s ease;
+}
+
+.bar button:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.bar button:disabled {
+  opacity: 0.4;
+}

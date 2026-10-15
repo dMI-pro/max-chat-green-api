@@ -1,0 +1,126 @@
+.window {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--chat-pattern);
+}
+
+.header {
+  height: 60px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(23, 24, 28, 0.92);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.back {
+  display: none;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.headerText {
+  min-width: 0;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub {
+  color: var(--text-mute);
+  font-size: 12px;
+}
+
+.messages {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyState {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: var(--chat-pattern);
+  position: relative;
+}
+
+.hero {
+  max-width: 420px;
+  text-align: center;
+  padding: 24px 20px;
+  border-radius: 18px;
+  background: rgba(23, 24, 28, 0.86);
+  border: 1px solid var(--border);
+}
+
+.heroMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  height: 30px;
+  padding: 0 12px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+}
+
+.hero h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.mobileOpen {
+  display: none;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .back,
+  .mobileOpen {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

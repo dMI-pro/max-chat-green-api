@@ -1,0 +1,68 @@
+.row {
+  display: flex;
+  margin-bottom: 6px;
+  animation: appear 0.16s ease;
+}
+
+.out {
+  justify-content: flex-end;
+}
+
+.in {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: min(78%, 520px);
+  padding: 9px 11px 5px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.outgoing {
+  background: var(--bubble-outgoing);
+  color: #fff;
+  border-bottom-right-radius: 5px;
+}
+
+.incoming {
+  background: var(--bubble-incoming);
+  color: var(--text-primary);
+  border-bottom-left-radius: 5px;
+}
+
+.failed {
+  outline: 1px solid rgba(206, 66, 87, 0.55);
+}
+
+.text {
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.35;
+  font-size: 15px;
+}
+
+.meta {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  margin-top: 3px;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.status {
+  font-weight: 600;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
