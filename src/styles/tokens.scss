@@ -1,0 +1,41 @@
+/* Палитра приближена к web.max.ru: theme=space, scheme=dark */
+:root {
+  --font-sans: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --bg-surface: #0f0f12;
+  --bg-primary: #17181c;
+  --bg-secondary: #25262d;
+  --bg-tertiary: rgba(255, 255, 255, 0.09);
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --bg-active: rgba(0, 122, 255, 0.12);
+  --bg-input: #25262d;
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-tertiary: rgba(255, 255, 255, 0.64);
+  --text-mute: rgba(255, 255, 255, 0.4);
+  --text-on-accent: #ffffff;
+
+  --accent: #007aff;
+  --accent-hover: #0a84ff;
+  --accent-soft: rgba(0, 122, 255, 0.16);
+
+  --bubble-outgoing: #6965e5;
+  --bubble-incoming: #232e3a;
+
+  --border: rgba(255, 255, 255, 0.08);
+  --divider: rgba(255, 255, 255, 0.12);
+  --danger: #ce4257;
+  --success: #2bc644;
+  --warning: #ffd60a;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --sidebar-width: 340px;
+
+  --chat-pattern: radial-gradient(ellipse at 20% 0%, rgba(105, 101, 229, 0.14), transparent 42%),
+    radial-gradient(ellipse at 80% 100%, rgba(0, 122, 255, 0.1), transparent 40%),
+    linear-gradient(180deg, #12131a 0%, #0f0f12 100%);
+}
